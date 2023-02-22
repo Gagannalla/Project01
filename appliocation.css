@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: black;
+}
+
+/*Container Features*/
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/*This is for providing features of form heading */
+.apply_box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white; 
+    margin: 0 auto;
+    margin-top: 50px; 
+    border-radius: 10px;
+}
+
+/*This for gaps between label and input*/
+.form_container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+/* This is for flexibility of form container*/
+.form_container {
+    flex:auto ;
+    flex-direction: column;
+}
+
+/*Features ist*/
+input, select, textarea {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+input:focus{
+    outline-color: red;
+
+}
+
+/*Apply Now line button features*/
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+button{
+    background-color: red;
+    font-size: 20px;
+    border: transparent solid 2px;
+    border-color: black;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+    border-color: black;
+    border: 2px solid black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+
+}
+
+.textarea_control{
+    grid-column: 1 /span2;
+}
+
+.textarea_control textarea{
+    width: 100%;
+}
